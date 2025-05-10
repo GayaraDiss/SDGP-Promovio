@@ -1,0 +1,118 @@
+/* Ensure container aligns with the overall layout */
+.currentPageContainer {
+    padding: 20px;
+    background-color: #121212; /* Match the background of the entire page */
+    color: #fff; /* White text for better contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.currentPageHeader {
+    display: flex;
+    justify-content: space-between; /* Space between title and search */
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #444; /* Optional separator line */
+    padding-bottom: 10px;
+}
+/* Left section: Title and tabs */
+.header-left {
+    display: flex;
+    flex-direction: column; /* Stack title and tabs vertically */
+    gap: 10px; /* Space between title and tabs */
+
+}
+
+.title h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #8f5de8; /* Match your purple theme */
+}
+
+.header-search {
+    display: flex;
+    align-items: center; /*center*/
+    gap: 10px; /* Space between inputs and buttons */
+}
+
+.search-input {
+    width: 250px;
+    padding: 8px 12px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1e1e2f;
+    color: #fff;
+}
+.search-input:focus {
+    outline: none;
+    border-color: #8f5de8;
+}
+
+.search-button:focus,
+.search-customers:focus,
+.tab:focus {
+    outline: 2px solid #8f5de8;
+    outline-offset: 2px;
+}
+
+
+.search-button,
+.search-customers {
+    background-color: #8f5de8;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.search-button:hover,
+.search-customers:hover {
+    background-color: #6a3fbb;
+}
+
+.tabs {
+    display: flex;
+    margin-top: 10px;
+}
+
+.tab {
+    padding: 8px 15px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: #1e1e2f;
+    color: #fff;
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+
+.tab.active {
+    background-color: #8f5de8;
+    color: white;
+    font-weight: bold;
+}
+
+.tab:hover {
+    background-color: #6a3fbb;
+}
+
+
+
+/* Ensure full responsiveness */
+/* Responsive design */
+@media (max-width: 768px) {
+    .currentPageHeader {
+        flex-direction: column; /* Stack left and right sections */
+        align-items: flex-start;
+        gap: 20px; /* Add spacing between sections */
+    }
+
+    .header-search {
+        width: 100%; /* Allow the search bar to take full width */
+    }
+
+    .search-input {
+        width: 100%; /* Full width on smaller screens */
+    }
+}

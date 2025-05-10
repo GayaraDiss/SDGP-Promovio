@@ -1,0 +1,339 @@
+.dashboard {
+    padding: 20px;
+}
+/* Table.css */
+.lead-status {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.lead-status.new-lead {
+    background-color: #ffeb3b; /* Yellow */
+}
+
+.lead-status.contacted {
+    background-color: #2196f3; /* Blue */
+}
+
+.lead-status.interested {
+    background-color: #4caf50; /* Green */
+}
+
+.lead-status.negotiation {
+    background-color: #ff9800; /* Orange */
+}
+
+.lead-status.converted {
+    background-color: #9c27b0; /* Purple */
+}
+
+.lead-status.lost {
+    background-color: #f44336; /* Red */
+}
+/*edition*/
+
+
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px auto;
+    overflow: hidden;
+    /* From https://css.glass */
+    background: rgba(48, 48, 53, 0.64);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.task-table th {
+    background-color: #2a2a3a;
+    /*border: 0.4px solid #444;*/
+    padding: 15px;
+    text-align: center;
+    /*color: black;*/
+    color: #fff;
+    font-weight: bold; /* Make headers stand out */
+    border-bottom: 1px solid #444; /* Add a subtle border */
+}
+.task-table td {
+    /*border: 0.2px solid #444;*/
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+.task-name {
+    font-weight: bold;
+}
+/* dashboard.css */
+.task-table tbody tr:nth-child(odd) {
+    background-color: #1e1e2f; /* Dark background for odd rows */
+}
+
+.task-table tbody tr:nth-child(even) {
+    background-color: #2a2a3a; /* Slightly lighter background for even rows */
+}
+
+.task-table tbody tr:hover {
+    background-color: #3a3a4a; /* Highlight row on hover */
+}
+/* dashboard.css */
+.task-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #444; /* Subtle border between rows */
+}
+
+.task-table td:first-child {
+    border-left: 1px solid #444; /* Left border for first column */
+}
+
+.task-table td:last-child {
+    border-right: 1px solid #444; /* Right border for last column */
+}
+
+.uploaded-date {
+    font-size: 0.8rem;
+    color: #b0b0b0;
+
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.action-btn {
+    background-color: #6441a5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.action-btn:hover {
+    background-color: #7e56c2;
+}
+
+/*.status-badge {*/
+/*    display: inline-block;*/
+/*    padding: 8px 16px;*/
+/*    font-size: 0.9rem;*/
+/*    font-weight: bold;*/
+/*    border-radius: 20px;*/
+/*    text-align: center;*/
+/*    min-width: 80px;*/
+/*    border: none;*/
+/*    cursor: default;*/
+/*}*/
+
+/*.status-badge.active {*/
+/*    background-color: #d4f4c4;*/
+/*    color: #3c763d;*/
+/*}*/
+
+/*.status-badge.archive {*/
+/*    background-color: #f8d7da;*/
+/*    color: #a94442;*/
+/*}*/
+
+
+
+
+
+.search-input {
+    width: 250px;
+    padding: 8px 12px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1e1e2f;
+    color: #fff;
+    margin: 10px;
+}
+.search-input::placeholder {
+    color: #b0b0b0; /* Lighter gray */
+}
+
+.action-btn:focus, .pagination button:focus {
+    outline: 2px solid #6441a5;
+}
+
+.purple-btn {
+    background-color: #6441a5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.purple-btn:hover {
+    background-color: #7e56c2; /* Lighter purple */
+}
+.purple-btn:focus {
+    outline: 2px solid #c256b4; /* Bright pink for focus */
+}
+
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 10px;
+}
+
+
+.tab, .filter {
+    background-color: #1e1e2f; /* Dark background */
+    color: #fff; /* White text */
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab.active, .filter.active {
+    background-color: #6441a5; /* Purple background */
+    color: white;
+    border-color: #6441a5;
+}
+/* Filters */
+.filters {
+    display: flex;
+    gap: 10px;
+}
+
+
+.status-badge {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    min-width: 80px;
+    border: none;
+    cursor: default;
+}
+
+.status-badge.active {
+    background-color: #d4f4c4; /* Light green */
+    color: #3c763d; /* Dark green text */
+    border: 1px solid #3c763d;
+}
+
+.status-badge.archive {
+    background-color: #f8d7da; /* Light red */
+    color: #a94442; /* Dark red text */
+    border: 1px solid #a94442;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.entries-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.entries-info select {
+    background-color: #6441a5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.entries-info select:hover {
+    background-color: #6a3fbb;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination-button {
+    background-color: #6441a5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.pagination-button:disabled {
+    background-color: #444;
+    cursor: not-allowed;
+}
+
+.pagination-button:hover:not(:disabled) {
+    background-color: #6a3fbb;
+}
+
+.pagination-links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pagination-link {
+    background-color: #1e1e2f;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pagination-link:hover {
+    background-color: #6441a5;
+    border-color: #6441a5;
+}
+
+.pagination-link.active {
+    background-color: #8f5de8;
+    color: white;
+    border-color: #8f5de8;
+    cursor: default;
+}
+
+.pagination-ellipsis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    color: #fff;
+}
+
+
+
+
+
+
+/*input[type="checkbox"] {*/
+/*    cursor: pointer;*/
+/*    accent-color: #6441a5; !* Purple accent *!*/
+/*    width: 16px; !* Optional: Adjust size *!*/
+/*    height: 16px; !* Optional: Adjust size *!*/
+/*}*/

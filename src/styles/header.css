@@ -1,0 +1,78 @@
+/* Header Container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e2e; /* Dark background */
+    color: #fff;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #6441a5; /* Purple border */
+    /*position: relative;*/
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* header.css */
+.header-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-search .input {
+    width: 250px;
+}
+
+.header-search .button {
+    padding: 8px 12px;
+}
+/* User Profile on the Top Left */
+.user-profile {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    font-size: 0.9rem;
+    color: #ccc; /* Slightly lighter color for subtle effect */
+    font-weight: normal;
+}
+
+/* Navigation Menu */
+/*.header nav a {*/
+/*    color: #fff;*/
+/*    text-decoration: none;*/
+/*    margin: 0 1rem;*/
+/*    font-size: 1.1rem;*/
+/*}*/
+
+/*.header nav a:hover {*/
+/*    color:  #8f5de8; !* Purple hover effect *!*/
+/*}*/
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #8f5de8;
+}
+/* Search Input */
+.search-input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    /*outline: none;*/
+    /*font-size: 1rem;*/
+    background-color: #1e1e2f;
+    color: #fff;
+    transition: border-color 0.2s ease;
+}
+.search-input:focus {
+    outline: none;
+    border-color: #8f5de8;
+}

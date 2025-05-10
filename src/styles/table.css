@@ -1,0 +1,92 @@
+/* Center the table on the page */
+/*.table-container {*/
+/*    padding: 30px;*/
+/*    background: #1e1e2e;*/
+/*    border-radius: 12px;*/
+/*    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);*/
+/*    margin: 50px auto;*/
+/*    width: 90%;*/
+/*    max-width: 1200px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+/* Table Styling */
+.lead-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #2a2a3a;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 10px 0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Table Header */
+.lead-table thead {
+    background-color: #3b3b52;
+}
+
+.lead-table th {
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid #444;
+    color: #e0e0e0;
+    width: 20%; /* Ensuring equal spacing */
+}
+
+/* Table Body */
+.lead-table td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+    color: #b0b0b0;
+}
+
+/* Alternate Row Colors */
+.lead-table tbody tr:nth-child(odd) {
+    background-color: #252536;
+}
+
+.lead-table tbody tr:hover {
+    background-color: #33334d;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Action Buttons */
+.action-btn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.view-btn {
+    background-color: #6b7280;
+}
+
+.view-btn:hover {
+    background-color: #4b5563;
+}
+
+.edit-btn {
+    background-color: #facc15;
+}
+
+.edit-btn:hover {
+    background-color: #eab308;
+}
+
+.delete-btn {
+    background-color: #ef4444;
+}
+
+.delete-btn:hover {
+    background-color: #dc2626;
+}

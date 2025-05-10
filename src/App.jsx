@@ -4,6 +4,7 @@ import ExpenseList from './components/spendTracker/ExpenseList';
 import ExpenseFilter from './components/spendTracker/ExpenseFilter';
 import ExpenseForm from './components/spendTracker/ExpenseForm';
 import './styles.css';
+import Dashboard from './pages/Dashboard';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <ExpenseForm addExpense = {addItem}/>
             <ExpenseFilter filterItem = {filterItem}/>
             <ExpenseList items = {expenses} deleteItem = {deleteItem}/>
+            {/* <Dashboard />; */}
         </>
     );
 
